@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Monitor Voting</title>
+    <link rel="stylesheet" href="studentvotes.css">
+</head>
+<body>
+    <h1>Class Monitor Vote</h1>
+    <form id="voteForm">
+        <label for="username">Student Username:</label>
+        <input type="text" id="username" required>
+        
+        <label for="candidate">Choose a candidate:</label>
+        <select id="candidate" required>
+            <option value="Abhay">Abhay</option>
+            <option value="Ananya">Ananya</option>
+            <option value="Nikky">Nikky</option>
+        </select>
+        
+        <button type="submit">Vote</button>
+    </form>
+
+    <h2>Total Votes: <span id="totalVotes">0</span></h2>
+    <div id="candidates">
+        <h3>Candidates</h3>
+        <ul id="candidateList">
+            <!-- Dynamic content will be inserted here -->
+        </ul>
+    </div>
+
+    <script src="studentvotes.js"></script>
+</body>
+</html>
